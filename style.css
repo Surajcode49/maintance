@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: left;
+}
+
+
+.lottie-background {
+    position: fixed; /* Ensures it covers the whole screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Send to back */
+    overflow: hidden;
+    margin: 0; /* Ensures no margin issue */
+    padding: 0;
+}
+
+.lottie-background dotlottie-player {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures full coverage */
+}
+
+
+/* Maintenance Container */
+.maintenance-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #000000;
+    text-shadow: 0 0 10px #dbd514, 0 0 20px #0ac419;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #dbd514, 0 0 20px #0ac419;
+}
+
+#timer span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact a {
+    color: #00d8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+#new{
+    display:flex;
+    justify-content: center;
+}
